@@ -1,9 +1,0 @@
-{
-  "name": "mauri-cv",
-  "version": "1.0.0",
-  "private": false,
-  "scripts": {
-    "deploy": "aws s3 sync ./ s3://mauri-cv --delete",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id E3K9G5RQ7426G8 --paths '/*'"
-  }
-}
